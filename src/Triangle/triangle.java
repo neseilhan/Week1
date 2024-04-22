@@ -1,6 +1,6 @@
-package Hypotenuse;
+package Triangle;
 import java.util.Scanner;
-public class hypotenuse {
+public class triangle {
     public static void main(String[] args) { // Heron yöntemiyle dik ücgen alanı hesaplama
         Scanner input =  new Scanner(System.in) ;
         int edge1,edge2,edge3;
