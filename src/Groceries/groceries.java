@@ -22,7 +22,7 @@ public class groceries {
         System.out.println("Patlıcan kac kilo?: ");
         patlicanKg = input.nextDouble();
 
-        total= (ARMUT*armutKg+ELMA*elmaKg+DOMATES*domatesKg+MUZ*muzKg+PATLICAN*patlicanKg); //toplam islemi yapildi.
+        total= (ARMUT*armutKg+ELMA*elmaKg+DOMATES*domatesKg+MUZ*muzKg+PATLICAN*patlicanKg); //toplam islemi yapildi .
 
         System.out.println("Toplam tutar: "+total);  //ekrana toplam ucret yazildi.
 
