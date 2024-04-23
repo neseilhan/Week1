@@ -4,10 +4,10 @@ public class avg_grades {
     public static void main(String[] args) {
 
     Scanner input = new Scanner (System.in);
-    double matVize,fizVize,kimyaVize,turkceVize,tarihVize,muzikVize;
+    double matVize,fizVize,kimyaVize,turkceVize,tarihVize,muzikVize; // vize final notları tanımlandı.
     double matFinal,fizFinal,kimyaFinal,turkceFinal,tarihFinal,muzFinal;
 
-        System.out.println("Matematik vize notunu giriniz: ");
+        System.out.println("Matematik vize notunu giriniz: "); //kullanıcıdan notlar istendi.
         matVize = input.nextDouble();
 
         System.out.println("Fizik vize notunu giriniz: ");
@@ -45,14 +45,14 @@ public class avg_grades {
         System.out.println("Muzik final notunu giriniz: ");
         muzFinal = input.nextDouble();
 
-        double matAvg = (matVize + matFinal) / 2;
+        double matAvg = (matVize + matFinal) / 2; //ortalamaları hesaplandı.
         double fizAvg = (fizVize + fizFinal) / 2;
         double kimyaAvg = (kimyaVize + kimyaFinal) / 2;
         double turAvg = (turkceVize + turkceFinal) / 2;
         double tarihAvg = (tarihVize + tarihFinal) / 2;
         double muzAvg = (muzikVize + muzFinal) / 2;
 
-        System.out.println("Matematik ortalama: " +matAvg);
+        System.out.println("Matematik ortalama: " +matAvg);  //Her ders için 60tan büyükse geçti degilse kaldı yazdırıldı.
         if (matAvg > 60) {
             System.out.println("Geçti");
         } else {
