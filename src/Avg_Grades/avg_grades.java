@@ -55,42 +55,42 @@ public class avg_grades {
         System.out.println("Matematik ortalama: " +matAvg);  //Her ders için 60tan büyükse geçti degilse kaldı yazdırıldı.
         if (matAvg > 60) {
             System.out.println("Geçti");
-        } else {
+            } else {
             System.out.println("Kaldı");
         }
 
         System.out.println("Matematik ortalama: " +matAvg);
         if (fizAvg > 60) {
             System.out.println("Geçti");
-        } else {
+            } else {
             System.out.println("Kaldı");
         }
 
         System.out.println("Matematik ortalama: " +matAvg);
         if (kimyaAvg > 60) {
             System.out.println("Geçti");
-        } else {
+            } else {
             System.out.println("Kaldı");
         }
 
         System.out.println("Matematik ortalama: " +matAvg);
         if (turAvg > 60) {
             System.out.println("Geçti");
-        } else {
+            } else {
             System.out.println("Kaldı");
         }
 
         System.out.println("Matematik ortalama: " +matAvg);
         if (tarihAvg > 60) {
             System.out.println("Geçti");
-        } else {
+             } else {
             System.out.println("Kaldı");
         }
 
         System.out.println("Matematik ortalama: " +matAvg);
         if (muzAvg > 60) {
             System.out.println("Geçti");
-        } else {
+            } else {
             System.out.println("Kaldı");
         }
 
