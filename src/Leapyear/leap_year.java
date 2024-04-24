@@ -4,17 +4,17 @@ public class leap_year {
     public static void main(String[] Args){
         Scanner inp = new Scanner(System.in);
 
-        int year;
+        int year; //yili tanimladik.
         System.out.println("Lutfen bir yil giriniz: ");
-        year = inp.nextInt();
+        year = inp.nextInt(); //yil girisini aldik.
 
-        if(year%400==0){
+        if(year%400==0){ //400'e tam bolunuyorsa artik yildir.
             System.out.println(+year+" bir artik yildir.");
         }
-        else if(year%4==0 && year%100!=0){
+        else if(year%4==0 && year%100!=0){ //4'e tam bölünüyorsa ama 100'e tam bolunmuyorsa artik yildir.
             System.out.println(+year+" bir artik yildir.");
         }
-        else {
+        else { //geri kalan ihtimaller artik yil degildir.
             System.out.println(+year+" bir artik yil degildir.");
         }
     }
