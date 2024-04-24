@@ -18,7 +18,7 @@ public class horoscope {
             if (month < 1 || month > 12) {   //Girilen ayin dogru aralikta oldugunu kontrol ediyoruz.
                 System.out.println("Hatali bir ay girdiniz.");
             }
-            if (day < 1 || day > 31) {   //Girilen ayin dogru aralikta oldugunu kontrol ediyoruz.
+            if (day < 1 || day > 31) {   //Girilen gunun dogru aralikta oldugunu kontrol ediyoruz.
                 System.out.println("Hatali bir gun girdiniz.");
             }
 
