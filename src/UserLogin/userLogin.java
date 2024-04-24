@@ -5,28 +5,28 @@ public class userLogin {
     public static void main(String[] Args){
         Scanner input = new Scanner(System.in);
 
-        String username = "patika"; //sifre ve kullanici adini basta tanimladik.
+        String username = "patika"; //basta kullanici adi ve sfire tanimlandi.
         String password = "java123";
         int select;
 
-        System.out.println("Lutfen kullanici adi giriniz:"); //kullanicidan adi ve sifreyi istedik.
+        System.out.println("Lutfen kullanici adi giriniz:");
         username = input.nextLine();
         System.out.println("Lutfen sifre giriniz:");
         password = input.nextLine();
 
         System.out.println("Giris yapiliyor...");
 
-        if(username.equals("patika") && password.equals("java123")){ //kullanici adi ve sifre uyumluluguna bakildi.
+        if(username.equals("patika") && password.equals("java123")){ //eslesmesi kontrol edildi.
             System.out.println("Giris Basarili.");
 
         }
         else{
-            System.out.println("Sifre veya kullanici adi hatali, sifrenizi sıfırlamak ister misiniz?\n 1-Evet\n 2-Hayir."); //sifre yanlıs girilmesi kosulu
+            System.out.println("Sifre veya kullanici adi hatali, sifrenizi sıfırlamak ister misiniz?\n 1-Evet\n 2-Hayir.");
             select = input.nextInt();
 
 
-            switch (select){
-                case 1: // yeni sifre alma durumu
+            switch (select){ //1. secenek yani yeni sifre alma secildi.
+                case 1:
                     System.out.println("Lutfen yeni sifreyi giriniz: ");
                     String newPassword = input.next();
 
@@ -35,11 +35,11 @@ public class userLogin {
 
                     break;
 
-                case 2: //yeni sifre almayı seçmemesş halinde cikis.
+                case 2: //2. secenek Hayır yani cikis yapildi.
                     System.out.print("Cikis yaptiniz.");
                     break;
 
-                default: // 1 ve 2 harici sayi girilmesi halinde hata ciktisi
+                default:
                     System.out.println("Yanlis deger girdiniz.");
 
             }
