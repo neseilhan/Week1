@@ -21,7 +21,7 @@ public class userLogin {
 
         }
         else{
-            System.out.println("Sifre veya kullanici adi hatali, sifrenizi sıfırlamak ister misiniz?\n 1-Evet\n 2-Hayir.");
+            System.out.println("Sifre veya kullanici adi hatali, sifrenizi sıfırlamak ister misiniz?\n 1-Evet\n 2-Hayir");
             select = input.nextInt();
 
 
