@@ -24,7 +24,7 @@ public class groceries {
 
         total= (ARMUT*armutKg+ELMA*elmaKg+DOMATES*domatesKg+MUZ*muzKg+PATLICAN*patlicanKg); //toplam islemi yapildi .
 
-        System.out.println("Toplam tutar: "+total);  //ekrana toplam ucret yazildi.
+        System.out.println("Toplam tutar: "+total+"TL");  //ekrana toplam ucret yazildi.
 
 
 
