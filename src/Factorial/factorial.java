@@ -5,9 +5,10 @@ public class factorial {
     public static void main(String[] Args)
     {
         Scanner inp = new Scanner(System.in);
-        int n,r,i,j;
+        int n,r,i,j,k;
         int nFac=1; //faktoriyel hesaplarken sıkıntı olmaması icin basta 1 tanımlıyoruz.
         int rFac=1;
+        int NminusRFac=1;
         int combination =0;
 
         System.out.println("N sayi giriniz: "); //n faktoriyel icin giris.
@@ -24,8 +25,12 @@ public class factorial {
             rFac *= j;
 //            System.out.println("r faktoriyel : "+rFac);
         }
+        for (k = 1; k <= n - r; k++) { // n-r faktoriyeli.
+            NminusRFac *= k;
+        }
 
-        combination = (nFac)/(rFac*(n-r)); //kombinasyon islemi.
+
+        combination = (nFac)/(rFac*(NminusRFac)); //kombinasyon islemi.
         System.out.println("n ve r sayilarinin kombinasyonu : "+combination);
 
     }
