@@ -6,9 +6,9 @@ public class leap_year {
 
         int year; //yili tanimladik.
         System.out.println("Lutfen bir yil giriniz: ");
-        year = inp.nextInt(); //yil girisini aldik.
+        year = inp.nextInt(); //yil girisini aldik.dxc
 
-        if(year%400==0){ //400'e tam bolunuyorsa artik yildir..
+        if(year%400==0){ //400'e tam bolunuyorsa artik yildir.
             System.out.println(+year+" bir artik yildir.");
         }
         else if(year%4==0 && year%100!=0){ //4'e tam bölünüyorsa ama 100'e tam bolunmuyorsa artik yildir.
