@@ -9,7 +9,7 @@ public class upside_triangle {
 
         for(int i=num; i>=0; i--){  //girilen sayidan baslayip azalarak inen yildizlar.
 
-            for(int k=1; k<=(2*i+1); k++){ //1,3,5 seklinde giden yildizlar.
+            for(int k=1; k<=(2*i-1); k++){ //1,3,5 seklinde giden yildizlar.
                 System.out.print("*");
             }
             System.out.println(" ");
