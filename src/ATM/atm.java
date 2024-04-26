@@ -8,14 +8,15 @@ public class atm {
         int balance = 10; //bankadaki paramiz.
         int select;
         int money=0;
-        System.out.println("-----Neselhan Bankasına Hosgeldiniz------");
-        //kullanici adi ve sifre girme
-        System.out.println("Lutfen kullanici adi giriniz:");
-        userName = inp.nextLine();
-        System.out.println("Lutfen sifre giriniz:");
-        password = inp.nextLine();
+        System.out.println("-----Gringotts Bankasına Hosgeldiniz------");
 
         do {
+            //kullanici adi ve sifre girme
+            System.out.println("Lutfen kullanici adi giriniz:");
+            userName = inp.nextLine();
+            System.out.println("Lutfen sifre giriniz:");
+            password = inp.nextLine();
+
             //sifre ve kullanici adi kontrolu
             if (userName.equals("Nese") && password.equals("kod123")) { //eslesmesi kontrol edildi.
                 System.out.println("Giris Basarili.");
@@ -52,15 +53,16 @@ public class atm {
                         System.out.println("Hatali giris yaptiniz.");
                         break;
                 }
-            } else {
+
+            }
+            else {
                 heart--;
-                System.out.println("Hatalı kullanıcı adı veya şifre. Tekrar deneyiniz. Kalan hakkınız : "+heart);
+                System.out.println("Hatalı kullanıcı adı veya şifre. Kalan hakkınız : "+heart);
             }
             if (heart == 0) {
                 System.out.println("Hesabınız bloke olmuştur lütfen banka ile iletişime geçiniz.");
-            } else {
-                System.out.println("");
             }
+
         } while(heart>0);
     }
 
