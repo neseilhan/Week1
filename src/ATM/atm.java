@@ -34,8 +34,8 @@ public class atm {
                             System.out.println("Lutfen yatirmak istediginiz miktari giriniz. ");
                             money = inp.nextInt();
                             balance += money;
-                            System.out.println("Hesabinizdaki yeni miktar: " + balance);
-
+                            System.out.println("Hesabinizdaki yeni miktar: " + balance+ "TL");
+                            logout = false;
                             break;
                         case 2:
                             System.out.println("Lutfen cekmek istediginiz miktari giriniz. ");
@@ -45,9 +45,11 @@ public class atm {
                                 balance -= money;
                             }
                             System.out.println("Hesabinizdaki guncel miktar: " + balance);
+                            logout = false;
                             break;
                         case 3:
-                            System.out.println("Guncel bakiyeniz :  " + balance);
+                            System.out.println("Guncel bakiyeniz :  " + balance+ "TL");
+                            logout = false;
                             break;
                         case 4:
                             System.out.println("Cikis yaptiniz.  ");
