@@ -14,8 +14,8 @@ public class ebob_ekok2 {
         System.out.println("Lutfen ikinci sayiyi giriniz :");
         num2 = inp.nextInt();
 
-        while(i <= num1 && i<=num2){
-            if(num1%i ==0 && num2%i==0){
+        while(i <= num1 && i<=num2){ //kucuk olan sayiya kadar dongu devam eder.
+            if(num1%i ==0 && num2%i==0){ //en buyugunu bulana kadar iki sayinin da kalansiz bolenlerini ebob degiskenine atar
                 ebob = i;
             }
             i++;
