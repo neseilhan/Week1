@@ -15,7 +15,7 @@ public class flight_ticket {
         System.out.println("Lutfen mesafe giriniz (km cinsinden) : ");
         km = inp.nextDouble();
 
-        System.out.println("Lutfen yolculuk tipi giriniz : ");
+        System.out.println("Lutfen yolculuk tipi giriniz :\n 1-Tek Yon\n 2-Cift Yon");
         yolculukTipi = inp.nextInt();
 
         Ucret = km*0.10;  // Indirimsiz ucret hesaplandi.
