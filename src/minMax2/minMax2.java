@@ -4,8 +4,8 @@ import java.util.Scanner;
 public class minMax2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        //Hesaplanacak sayı adedini kullanıcıdan al:
-        System.out.print("Hesaplanacak sayı adedini girin (n): ");
+
+        System.out.print("Hesaplanacak sayı adedini girin (n): "); //kac adet sayi giriliyor.
         int count = scanner.nextInt();
 
         System.out.print("1. sayi : ");
