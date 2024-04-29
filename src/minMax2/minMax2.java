@@ -8,24 +8,19 @@ public class minMax2 {
         System.out.print("Hesaplanacak sayı adedini girin (n): ");
         int count = scanner.nextInt();
 
-        if (count <= 0) {
-            System.out.println("Girilen sayı pozitif tam sayı olmalıdır: ");
-            return;
-        }
-        //Kullancıdan ilk sayıyı al:
-        System.out.print("İlk sayıyı girin: ");
+        System.out.print("1. sayi : ");
         double num = scanner.nextDouble();
         double min = num;
         double max = num;
-        //İlk sayı girildiği için döngüyü 2'den başlat ve (n)'e kadar sayı girişi iste:
-        for (int i = 2; i <= count; i++) {
-            System.out.print("Sayı " + i + ": ");
+
+        for (int i = 2; i <= count; i++) { //ilk sayi girildigi icn 2den baslar.
+            System.out.print(+i+". sayi : ");
             num = scanner.nextDouble();
-            //Eğer sayı minimumdan küçükse yeni değeri o sayıya eşitle:
+
             if (num < min) {
                 min = num;
             }
-            //Eğer sayı maksimumdan büyükse yeni değeri o sayıya eşitle:
+
             if (num > max) {
                 max = num;
             }
@@ -33,6 +28,5 @@ public class minMax2 {
         System.out.println("En kücük sayı: " + min);
         System.out.println("En büyük sayı: " + max);
 
-        scanner.close();
     }
 }
